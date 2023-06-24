@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.serverclienttt.AppViewController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="300.0">
+            <children>
+                <Label fx:id="id_l" layoutX="55.0" layoutY="98.0" prefHeight="26.0" prefWidth="57.0" text="Host" textFill="RED">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="HostID" layoutX="55.0" layoutY="124.0" />
+                <Label fx:id="name_l" layoutX="55.0" layoutY="168.0" prefHeight="26.0" prefWidth="49.0" text="Port" textFill="RED">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="PortID" layoutX="55.0" layoutY="194.0" />
+                <Button fx:id="add_btn" layoutX="86.0" layoutY="270.0" mnemonicParsing="false" onAction="#onconnect" prefHeight="26.0" prefWidth="129.0" text="Connection to server" textFill="#1d9f42" />
+                <Label fx:id="cost_v" layoutX="118.0" layoutY="335.0">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="310.0" layoutY="10.0" prefHeight="400.0" prefWidth="300.0">
+            <children>
+                <BorderPane prefHeight="400.0" prefWidth="300.0">
+                    <bottom>
+                        <HBox prefHeight="38.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <TextField fx:id="MessageID" prefHeight="41.0" prefWidth="253.0" />
+                                <Button mnemonicParsing="false" onAction="#onsubmit" prefHeight="39.0" prefWidth="47.0" text="Send" textFill="#17c935" />
+                            </children>
+                        </HBox>
+                    </bottom>
+                    <center>
+                        <ListView fx:id="testview" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.serverclienttt.LoginView">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="300.0">
+            <children>
+                <Text fill="#ff6e6e" layoutX="28.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat App" textAlignment="CENTER" wrappingWidth="261.73675537109375">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Text>
+                <Label layoutX="111.0" layoutY="88.0" prefHeight="17.0" prefWidth="107.0" text="Chat Application" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="300.0" layoutY="1.0" prefHeight="400.0" prefWidth="300.0">
+            <children>
+                <Label fx:id="username_label" layoutX="52.0" layoutY="156.0" text="Login" />
+                <Text fill="#ff6b6b" layoutX="57.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Page" textAlignment="CENTER" wrappingWidth="143.73681640625">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="username_log" layoutX="49.0" layoutY="174.0" />
+                <Label fx:id="password_label" layoutX="49.0" layoutY="215.0" text="Password" />
+                <PasswordField fx:id="password_log" layoutX="52.0" layoutY="247.0" />
+                <Button fx:id="login_btn" layoutX="49.0" layoutY="285.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="26.0" prefWidth="57.0" text="login" />
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>
